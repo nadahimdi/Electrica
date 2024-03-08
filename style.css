@@ -1,0 +1,120 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width :100%;
+    min-height : 100vh;
+    background-color: rgb(255, 254, 254);
+    background-size: cover;
+    padding:10px 10%;
+    position: inherit;
+    
+}
+nav{
+   display:flex;
+   align-items: center;
+   justify-content:space-between;
+}
+
+.logo{
+     width:40px;
+     margin-left: -60px;
+      vertical-align: middle;
+
+}
+.icon {
+    margin-right: 8px; /* Adjust the spacing between the icon and the input */
+  }
+  
+  .icon i {
+    font-size: 14px; /* Set the font size to make the icon small */
+    color: #555; /* Optional: Set the icon color */
+  }
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin:10px 15px;
+
+}
+
+.p{
+    margin: 0; 
+    display: inline-block;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: #0a0808;
+
+}
+
+.login-btn{
+    text-decoration:none;
+    color:black;
+    margin-right:15px;
+    font-weight:400;
+}
+
+.btn{
+    display:inline-block;
+    font-weight: bolder;
+    text-decoration:none;
+    padding:14px 40px;
+    color:white;
+    background-image: linear-gradient(45deg,#ff0000,#f48985);
+    font-size:14px;
+    border-radius:30px;
+    border-top-right-radius:0;
+    transition:0.5s;
+}
+
+
+
+.content{
+    margin-top:10%;
+    max-width:600px;
+}
+.content h1{
+    font-size:70px;
+    color:#222;
+}
+.content p {
+    margin:10px 0 30px;
+    color:#333;
+}
+
+.btn:hover{
+    border-top-right-radius:30px;
+}
+
+.feature-img{
+    width:700px;
+    position:absolute;
+    bottom:0;
+    right:5%;
+}
+.feature-img .anim{
+    transition:2.5s;
+
+}
+
+.anim{
+    opacity:0;
+    transform: translateY(30px);
+    animation:moveup 1s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity:1;
+        transform:translateY(10px);
+    }
+}
+
+
